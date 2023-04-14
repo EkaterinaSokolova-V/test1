@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 50px;
+}
+
+#id1 {
+    font-size: 30px;
+    color: red;
+}
+
+.cl {
+    background-color: chartreuse;
+}
+
+[type='date'] {
+    height: 100px;
+}
+
+#content div {
+    color: blue;
+    font-size: 50px;
+}
+
+#content div:nth-child(2n) {
+    color: black;
+    font-size: 60px;
+}
+
+#content div:nth-child(3n) {
+    color:crimson;
+    font-size: 60px;
+}
+
+input[type="text"]::placeholder {
+    color: red;
+}
+
+input[type="text"]::focus {
+    outline-color:darkgreen;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-image: url(p6.png);
+}
+
+.div1 {
+    height: 100%;
+    background-color:darkorange;
+    width: 5em;
+    margin-top: 40px;
+}
+
+.div1::after, .div1::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color:black;
+}
+
+.div2 {
+    background-color: coral;
+    font-size: 20px;
+}
+
+#content {
+    width: 300px;
+    font-size: 50px;
+}
+
+.div4 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: solid 5px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.div4:hover {
+    background-color:blue;
+}
