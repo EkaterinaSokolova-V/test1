@@ -205,3 +205,17 @@ console.log(arrNum.filter(element => element % 2 == 1));
 console.log(arrNum.filter((element, i) => element % 2 == 1 && i % 2 ===1));
 
 console.log("2,3,4,6,7,8".split(",").filter((el, i) => el % 2 == 1));
+
+//map runs function for every element of array and returns new array
+//forEach does not return new array (returns undefined)
+const squire = (n) => n * n;
+console.log(arrNum.map(squire));
+//console.log(arrNum.map((n) =>  n * n));
+
+console.log(arrNum.map((el, i, arrNum) => i % 2 === 1 ? el * el : el));
+console.log(arrNum);
+
+//reduce/reduceRight
+//arr.reduce(callback fun, 0) 0 - es default value 
+console.log(arrNum.reduce((sum, el, i) => sum + i % 2 === 1 ? el : -el, 0));
+console.log(arrNum.reduce((sum, el, i) => sum *= el, 1));
